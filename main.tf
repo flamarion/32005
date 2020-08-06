@@ -7,7 +7,7 @@ data "external" "git_commit_author" {
 
 resource "null_resource" "git_commit_author" {
   provisioner "local-exec" {
-    command = "echo ${data.external.git_commit_author.result}"
+    command = "echo ${data.external.git_commit_author.result["git_commit_author"]}"
   }
 }
 
