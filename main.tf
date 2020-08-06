@@ -8,7 +8,7 @@
 
 data "external" "git_commit_author" {
   program     = ["${path.module}/git_commit_author.sh"]
-  working_dir = path.root
+  #working_dir = path.root
 }
 
 output "git_commit_author" {
