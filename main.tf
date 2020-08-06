@@ -5,5 +5,5 @@ data "external" "git_commit_author" {
 
 
 output "git_commit_author" {
-    value = data.git_commit_author
+    value = data.git_commit_author.result
 }
